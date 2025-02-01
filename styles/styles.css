@@ -1,6 +1,10 @@
+:root {
+    --common-square-space-10: 10px;
+}
+
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: var(--common-square-space-10);
 }
 
 nav a {
@@ -32,7 +36,7 @@ main {
 
 aside {
     width: 500px;
-    margin: 10px;
+    margin: var(--common-square-space-10);
     border: thin solid rgb(0 0 0 /.2);
     padding: 15px;
     background-color: moccasin;
@@ -46,6 +50,6 @@ aside img {
 
 footer {
     border-top: thin solid rgb(0 0 0 /.4);
-    margin-top: 10px;
+    margin-top: var(--common-square-space-10);
     text-align: center;
 }
