@@ -1,0 +1,69 @@
+:root{
+    --primary-color: #1BE7FF;
+    --secondary-color :#09ACEC;
+    --accent1-color :#BAABBD;
+    --accent2-color :#231651;
+}
+
+body {
+    max-width: 1000px;
+    border: 0 auto;
+    display: inline-block;
+}
+
+footer nav a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Trade Winds", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary-color);
+}
+
+.alumni-sans-pinstripe-regular {
+    font-family: "Alumni Sans Pinstripe", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.alumni-sans-pinstripe-regular-italic {
+    font-family: "Alumni Sans Pinstripe", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.hero{
+    position: relative;
+}
+
+.hero h1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--accent1-color);
+}
+
+.hero article{
+    position: absolute;
+    clear: both;
+    top: 90px;
+    left: 20px;
+    color: var(--accent2-color);
+    background-color: #ffffffc2;
+    padding-right: 20px;
+    
+}
+
+.hero article img {
+    float: right;
+    width: 250px;
+    height: auto;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+  
