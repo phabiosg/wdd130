@@ -6,19 +6,85 @@
 }
 
 body {
-    max-width: 1000px;
+    max-width: 1500px;
     display: inline-block;
+    padding: 10px;
+    background: var(--accent1-color);
+    font-family: "Alumni Sans Pinstripe", serif;
 }
 
-footer nav a {
-    text-decoration: none;
+header {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
 }
+
+header img {
+    padding-left: 30px;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+header nav a{
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--accent2-color);
+}
+
+#story {
+    padding: 5px;
+    background-color: var(--accent2-color);
+    opacity: .9;
+    text-align: center;
+    color: var(--accent1-color);
+}
+
+#story h2{
+    padding: 15px 15px;
+    font-style: italic;
+    font-size: 40px;
+    margin: 0;
+}
+
+.story-flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+}
+
+.story-flex-container > img{
+    width: auto;
+    height: 100px;
+}
+
+.adventure-flex-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 25px;
+}
+
+.adventure-flex-container figure img{
+    width: auto;
+    height: 150px;
+}
+
 
 h1, h2, h3, h4 {
     font-family: "Trade Winds", serif;
     font-weight: 400;
     font-style: normal;
     color: var(--primary-color);
+    text-align: center;
 }
 
 .alumni-sans-pinstripe-regular {
@@ -26,7 +92,7 @@ h1, h2, h3, h4 {
     font-weight: 400;
     font-style: normal;
 }
-  
+
 .alumni-sans-pinstripe-regular-italic {
     font-family: "Alumni Sans Pinstripe", serif;
     font-weight: 400;
@@ -64,4 +130,16 @@ h1, h2, h3, h4 {
     width: 100%;
     height: auto;
 }
-  
+
+footer nav{
+    display: flex;
+    flex-direction: row-reverse;
+}
+footer nav a {
+    margin: 0 20px 0 20px;
+    text-decoration: none;
+}
+footer nav img {
+    height: 60px;
+    width: auto;
+}
