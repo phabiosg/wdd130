@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-family: "Quicksand", serif;
+    color: rgb(40, 40, 40);
+    font-size: 18px;
+    width: 700px;
+}
+
+h1 {
+    color: rgb(3, 3, 82);
+    font-size: 25px;
+    text-align: center;
+}
+
+form {
+    width: 600px;
+    margin: 15px;
+    border: thin solid black;
+    border-radius: 2%;
+    background-color: lightsteelblue;
+}
+
+fieldset {
+    padding: 20px;
+    margin: 15px;
+}
+
+
+
+#contact-information input {
+    height: 35px;
+}
+
+select {
+    height: 35px;
+}
+
+
+
+label {
+    text-align: right;
+    margin-right: 10px;
+}
+
+legend {
+    margin-left: 15px;
+    font-size: 20px;
+    color: rgb(1, 2, 81);
+    font-weight: bold;
+}
+
+input {
+    text-align: left;
+}
+
+.action-button{
+    display: flex;
+    justify-content: center;
+}
+
+#submit {
+    background-color: rgb(1, 2, 81);
+    color: white;
+    border-radius: 5%;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: grey;
+}
+
+input[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 1rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: .5rem 0;
+}
+
+.column3 {
+    grid-template-columns: 1fr;
+    align-items:flex-start;
+}
+
+.column3 label {
+    text-align: center;
+    margin-bottom: .5rem;
+}
