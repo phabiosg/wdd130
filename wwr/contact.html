@@ -58,14 +58,12 @@
                 </div>
             </div>
             <div class="contact-info-left">
-                <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:100%;height:400px;">
-                    <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
-                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=kauhikoa+rd&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                <div>
+                    <div id="embedded-map-display">
+                        <iframe frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=kauhikoa+rd&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
                     </div>
                     <a class="embedded-map-code" href="https://www.bootstrapskins.com/themes" id="grab-map-authorization">premium bootstrap themes</a>
-                    <style>
-                        #embedded-map-display img{max-height:none;max-width:none!important;background:none!important;}
-                    </style></div>
+                </div>
             </div>
         </section>
         <section class="contact-form">
@@ -79,15 +77,15 @@
                     <label for="purposes">Purposes:</label>
                     <fieldset name="purposes">
                         <div>
-                            <input type="checkbox" name="purposes" id="general">
+                            <input type="radio" name="purposes" id="general">
                             <label for="general">General Inquiry</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="purposes" id="reservation">
+                            <input type="radio" name="purposes" id="reservation">
                             <label for="reservation">Reservation Question</label> 
                         </div>
                         <div>
-                            <input type="checkbox" name="purposes" id="suggestion">
+                            <input type="radio" name="purposes" id="suggestion">
                             <label for="suggestion">Website Suggestion</label> 
                         </div>
                     </fieldset>
@@ -99,7 +97,7 @@
                 <div>
                     <label for="messge">Your message for us:</label>
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    <button>Submit</button>
+                    <button>Let us know!</button>
                 </div>
             </form>
         </section>
