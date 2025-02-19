@@ -1,44 +1,50 @@
 :root{
-    --primary-color: #1BE7FF;
-    --secondary-color :#09ACEC;
-    --accent1-color :#BAABBD;
-    --accent2-color :#231651;
+    --primary-color: #000000;
+    --accent1-color :#daeffa;
+    --accent2-color :#040F16;
+    display: flex;
+    justify-content: center;
 }
 
 body {
     width: 1380px;
     display: inline-block;
     padding: 10px;
-    background: var(--accent1-color);
     font-family: "Alumni Sans Pinstripe", serif;
     overflow:scroll;
+    background-color: #E6D19E;
 }
 
 header {
     display: grid;
     grid-template-columns: 3fr 7fr;
+    background-color: #CBA135;
 }
 
 header img {
-    padding-left: 30px;
+    height: 100px;
+    width: auto;
+    margin:30px
 }
 
 header nav {
-    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-
+    margin-right: 400px;
 }
 
 
 header nav a{
-    font-size: 1.5em;
+    font-size: 2em;
     text-decoration: none;
     font-weight: bold;
     color: var(--accent2-color);
 }
-
+main {
+    background:#F3EFE0;
+    padding: 15px;
+}
 #story {
     padding: 5px;
     background-color: var(--accent2-color);
@@ -93,7 +99,7 @@ h3 {
 }
 
 h2 {
-    font-size: 45px;
+    font-size: 25px;
 }
 
 .alumni-sans-pinstripe-regular {
@@ -146,6 +152,8 @@ footer nav{
 footer nav a {
     margin: 0 20px 0 20px;
     text-decoration: none;
+    color: var(--primary-color);
+    font-size: 2em;
 }
 footer nav img {
     height: 60px;
@@ -168,7 +176,7 @@ footer nav img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+ 
 }
 
 .contact-info-right table{
@@ -231,7 +239,9 @@ form div {
     display: flex;
     flex-direction: column;
 }
-
+.contact-form {
+    padding-top: 50px;
+}
 .contact-form-left > input{
     height: 35px;
     margin-bottom: 15px;
@@ -270,7 +280,8 @@ button{
     border-radius:10px;
     font-size: 25px;
     color: white;
-    background-color: #09ACEC;
+    background-color: var(--primary-color);
+    min-width: 400px;
 }
 
 #embedded-map-display{
@@ -385,10 +396,8 @@ button{
     width: 500px;
     height: 35px;
     margin-bottom: 40px;
-}
-button {
-    min-width: 400px;
-}
+} 
+
 .trip-list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
